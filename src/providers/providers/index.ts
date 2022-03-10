@@ -146,25 +146,11 @@ export const BINANCECHAINWALLET: IProviderInfo = {
   check: "isBinanceChainWallet"
 };
 
-/**
- * @deprecated Use CoinbaseWalletSdk
- */
-export const WALLETLINK: IProviderInfo = {
-  id: "walletlink",
-  name: "Coinbase Wallet",
-  logo: CoinbaseWalletLogo,
-  type: "qrcode",
-  check: "isCoinbaseWallet",
-  package: {
-    required: [["appName", "infuraId", "rpc"]]
-  }
-};
-
 export const COINBASEWALLET: IProviderInfo = {
   id: "coinbasewallet",
   name: "Coinbase Wallet",
   logo: CoinbaseWalletLogo,
-  type: "qrcode",
+  type: "injected",
   check: "isCoinbaseWallet",
   package: {
     required: [["appName", "infuraId", "rpc"]]
