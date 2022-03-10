@@ -154,7 +154,7 @@ export const WALLETLINK: IProviderInfo = {
   name: "Coinbase Wallet",
   logo: CoinbaseWalletLogo,
   type: "qrcode",
-  check: "isCoinbaseQr",
+  check: "isCoinbaseWallet",
   package: {
     required: [["appName", "infuraId", "rpc"]]
   }
@@ -165,7 +165,7 @@ export const COINBASEWALLET: IProviderInfo = {
   name: "Coinbase Wallet",
   logo: CoinbaseWalletLogo,
   type: "qrcode",
-  check: "isCoinbaseQr",
+  check: "isCoinbaseWallet",
   package: {
     required: [["appName", "infuraId", "rpc"]]
   }
