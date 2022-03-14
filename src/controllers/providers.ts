@@ -121,7 +121,7 @@ export class ProviderController {
   public getUserOptions = () => {
     const mobile = isMobile();
 
-    const defaultProviderList = this.providers.map(({ id }) => id);
+    const defaultProviderList = new Set(this.providers.map(({ id }) => id));
 
     const displayInjected =
       !!this.injectedProvider && !this.disableInjectedProvider;
